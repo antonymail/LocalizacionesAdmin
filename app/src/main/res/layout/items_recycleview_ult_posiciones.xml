@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/carviewUltimasPosiciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        card_view:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@android:color/black"
+
+        >
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/imagenUsuario_ult"
+        android:layout_alignStart="@+id/imagenUsuario_ult">
+
+        <ImageView
+            android:id="@+id/imagenUsuario_ult"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/brujula_litle"
+
+             />
+
+
+        <TextView
+            android:id="@+id/txtNombre_ult"
+            android:text="Nombre"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imagenUsuario_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:textColor="@android:color/holo_orange_dark"/>
+
+        <TextView
+            android:id="@+id/FechaHora_ult"
+            android:text="FechaHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombre_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:textColor="@android:color/white"
+             />
+
+        <TextView
+            android:id="@+id/Longitud_ult"
+            android:text="Longitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FechaHora_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/Latitud_ult"
+            android:text="Latitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Longitud_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/Localizacion_ult"
+            android:text="Localizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Latitud_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/Velocidad_ult"
+            android:text="Velocidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Localizacion_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/placeholder_gris"
+            android:id="@+id/imgVerUbicacion"
+            android:layout_alignBottom="@+id/Velocidad_ult"
+            android:layout_toStartOf="@+id/txtubicacion" />
+
+
+        <TextView
+            android:id="@+id/txtubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Ver Ubicación"
+            android:textStyle="bold"
+            android:textSize="15sp"
+
+            android:gravity="right"
+            android:layout_below="@+id/imagenUsuario_ult"
+
+            android:layout_alignParentEnd="true" />
+
+
+        <Button
+            android:id="@+id/btncontactar"
+            android:textColor="@color/md_white_1000"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="CONTACTAR"
+            android:background="@drawable/redondea_boton"
+            android:textSize="11sp"
+            android:textStyle="bold"
+
+            android:layout_alignBaseline="@+id/FechaHora_ult"
+            android:layout_alignBottom="@+id/FechaHora_ult"
+            android:layout_toEndOf="@+id/imgVerUbicacion" />
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
